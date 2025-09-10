@@ -322,4 +322,10 @@ body,
   50% {
     transform: translateY(-10px);
   }
+@media (max-width: 600px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+}
+
 }
