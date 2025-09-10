@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MY PORTFOLIO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="typing-text">Hi, I'm <span class="highlight-name">JERALD</span></h1>
+    <p>Web Developer | Problem Solver | Lifelong Learner</p>
+    <button id="theme-toggle" class="toggle-btn" aria-label="Toggle dark mode">
+      <span class="icon sun visible">☀️</span>
+      <span class="icon moon">🌙</span>
+    </button>
+  </header>
+
+  <section id="about">
+    <div>
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate web developer with a knack for transforming creative ideas into sleek, functional web
+        experiences.
+        Over the years, I’ve built projects ranging from interactive calculators to dynamic task managers using HTML,
+        CSS, JavaScript, and Git/GitHub.
+      </p>
+      <p>
+        What really excites me is solving real-world problems through thoughtful UX and clean code. Whether I'm
+        developing from scratch or optimizing an existing workflow, I thrive on turning challenges into learning and
+        growth.
+        When I’m not coding, you’ll find me experimenting with new frameworks, exploring UI design trends, or tinkering
+        with small automation scripts to make life easier.
+      </p>
+      <ul>
+        <li>Constantly learning new tools and techniques to stay ahead in the fast‑paced world of web development</li>
+        <li>Enjoy weekend coding jams, challenges, and virtual hackathons</li>
+        <li>Love bringing problem‑solving energy and calm curiosity to each project</li>
+      </ul>
+    </div>
+    <img src="profile40.jpg" alt="profile40" class="profile-img">
+  </section>
+
+  <section id="skills">
+    <h2>Skills
+      <button onclick="toggleSkills()" id="skill-btn">Show/Hide</button>
+    </h2>
+    <ul id="skills-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card" onclick="highlightcard(this)">
+      <h3>Project 1: Online Calculator</h3>
+      <p>A simple calculator using JavaScript</p>
+    </div>
+    <div class="project-card" onclick="highlightcard(this)">
+      <h3>Project 2: Todo List</h3>
+      <p>A dynamic task manager built using HTML, CSS, and JS.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jerald | <span id="year"></span></p>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button onclick="scrollToTop()" id="topBtn">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
